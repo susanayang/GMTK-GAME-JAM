@@ -134,17 +134,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 8534018703369305740, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534018703369305740, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534018703369305740, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8534018703369305743, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8534018703369305743, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 8534018703369305743, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 8534018703369305743, guid: 0502ff3ce5c2047b8a4b7cbe649c8058, type: 3}
       propertyPath: m_LocalPosition.z
