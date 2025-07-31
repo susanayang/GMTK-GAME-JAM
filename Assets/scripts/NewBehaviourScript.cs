@@ -31,5 +31,17 @@ public class NewBehaviourScript : MonoBehaviour
         {
             player.transform.position += (Vector3.right * movespeed) * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            movespeed = 10;
+        }
+        else if (Input.GetKey(KeyCode.LeftControl))
+        {
+            movespeed = 2;
+        }
+        else
+        {
+            movespeed = 5;
+        }
     }
 }
