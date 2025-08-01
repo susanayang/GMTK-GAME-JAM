@@ -3,37 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-
-public class GOButtomHandler : MonoBehaviour
+public class GBButtomHandler : MonoBehaviour
 {
-    public void OnRetryButtonClick()
+    public void OnBeginButtonClick()
     {
-        Debug.Log("点击了重新开始按钮");
+        Debug.Log("点击了开始游戏按钮");
         // SceneManager.LoadScene("");
     }
 
     public void OnQuitButtonClick()
     {
-        Debug.Log("点击了退出按钮");
-
+        Debug.Log("点击了退出游戏按钮");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
