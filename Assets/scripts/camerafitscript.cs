@@ -5,24 +5,23 @@ using UnityEngine;
 
 public class camerafitscript : MonoBehaviour
 {
-    public float camsize;
-    public float ratio = Screen.width*1.0f / Screen.height;
-    public float camheight = 10;
-    public float camwidth=5.625f;
+    public float ratio = 16f / 9f;
+    RectTransform r;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Camera.main.aspect = (float)Screen.width / Screen.height;
-        float camorthosize = this.GetComponent<Camera>().orthographicSize;
-        float newcamwidth = camorthosize * 2 * ratio;
-        if (newcamwidth < camwidth)
+        r = GetComponent<RectTransform>();
+        float screenratio = (float)Screen.width / Screen.height;
+        if (screenratio > ratio)
         {
-            camorthosize = camwidth / (2 * ratio);
-            this.GetComponent<Camera>().orthographicSize = camorthosize;
+            r.sizeDelta = new Vector2(r.sizeDelta.y * screenratio, r.sizeDelta.y);
         }
-
+        else if (screenratio < 1 / ratio)
+        {
+            r.sizeDelta = new Vector2(r.sizeDelta.x, r.sizeDelta.x/screenratio);
+        }
     }
 
     // Update is called once per frame
