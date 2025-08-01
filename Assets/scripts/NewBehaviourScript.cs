@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject player;
     public float movespeed = 5;
+    public int scenei = 1;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -42,6 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
         else
         {
             movespeed = 5;
+        }
+        Debug.Log(scenei);
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "exit")
+        {
+            
         }
     }
 }
