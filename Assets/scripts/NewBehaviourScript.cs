@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject player;
     public float movespeed = 5;
+    public int scenei = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,12 +45,13 @@ public class NewBehaviourScript : MonoBehaviour
         {
             movespeed = 5;
         }
+        Debug.Log(scenei);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "exit")
         {
-            SceneManager.LoadScene(0);
+            
         }
     }
 }
