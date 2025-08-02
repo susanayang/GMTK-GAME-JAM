@@ -142,7 +142,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.14150941, g: 0.11681201, b: 0.11681201, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -166,14 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8534018703369305738}
   movespeed: 5
-  scenei: 1
-  attackPoint: {fileID: 5625179724893901228}
-  attackRange: 0.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  attackCooldown: 1
---- !u!114 &5559038739484986813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
---- !u!50 &8534018703369305729
+  scenei: 2
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
