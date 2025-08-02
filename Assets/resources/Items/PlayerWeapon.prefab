@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1203859684514259510}
   - component: {fileID: 4072629314625897224}
   - component: {fileID: 530600099333513333}
-  - component: {fileID: 4107991834662295077}
+  - component: {fileID: 8915323266613737302}
+  - component: {fileID: 2091638254}
   m_Layer: 0
   m_Name: PlayerWeapon
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6780747909390881956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.9128, y: -1.6498557, z: 0.10464853}
-  m_LocalScale: {x: 0.3067, y: 1, z: 1}
+  m_LocalScale: {x: 1.1296067, y: 0.8996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: c2f4513efe01ab1498119056b904f524, type: 3}
   m_Color: {r: 0.7283019, g: 0.22398713, b: 0.22398713, a: 1}
   m_FlipX: 0
@@ -112,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4107991834662295077
+--- !u!114 &8915323266613737302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +122,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 6780747909390881956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83672a163eccd534b977893bbce38c65, type: 3}
+  m_Script: {fileID: 11500000, guid: b8b06de49ad5043849914842d76e9633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: eff75786a295dcd48a2ff8dede2a54a6, type: 2}
+  item: {fileID: 11400000, guid: b7f771788442746328165076ec835259, type: 2}
+--- !u!50 &2091638254
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780747909390881956}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
